@@ -1,126 +1,59 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Cores suaves */
 body {
-  background-color: #fff0f5;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #333;
 }
-
-/* Topo */
-.topo {
-  background-color: #ff69b4;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.topo .logo {
-  font-size: 24px;
-  font-weight: bold;
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
-
-.topo .busca {
-  flex: 1;
-  margin: 0 15px;
-  padding: 8px 10px;
-  border: none;
-  border-radius: 5px;
+main {
+    padding: 20px;
 }
-
-.topo .icones a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Menu */
-.menu {
-  background-color: #ffc0cb;
-  padding: 10px 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.menu a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Banner */
-.banner {
-  background: linear-gradient(135deg, #ffe4e1, #f8f8ff);
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.banner h2 {
-  font-size: 32px;
-  color: #ff1493;
-}
-
-.banner p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-/* Produtos */
 .produtos {
-  padding: 30px 20px;
-  text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-
-.produtos h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #ff1493;
-}
-
-.grade {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .produto {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 15px;
-  width: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-.produto img {
-  width: 100%;
-  border-radius: 8px;
+.produto:hover {
+    background-color: #fff0f5;
 }
-
-.produto p {
-  margin: 10px 0 5px;
-  font-weight: bold;
+.carrinho {
+    margin-top: 40px;
 }
-
-.produto span {
-  color: #ff1493;
+.carrinho ul {
+    list-style: none;
+    padding: 0;
 }
-
-/* Rodapé */
-.rodape {
-  background-color: #ff69b4;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+.carrinho li {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
