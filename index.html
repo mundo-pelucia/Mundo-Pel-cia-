@@ -1,61 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo Pelúcia</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pelúcia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Topo -->
-  <header class="topo">
-    <div class="logo">Mundo Pelúcia</div>
-    <input type="text" placeholder="Buscar produtos..." class="busca">
-    <div class="icones">
-      <a href="#">Login</a>
-      <a href="#">Carrinho</a>
-    </div>
-  </header>
-
-  <!-- Menu -->
-  <nav class="menu">
-    <a href="#">Ursinhos</a>
-    <a href="#">Almofadas</a>
-    <a href="#">Chaveiros</a>
-    <a href="#">Promoções</a>
-  </nav>
-
-  <!-- Banner -->
-  <section class="banner">
-    <h2>Bem-vindo ao Mundo Pelúcia!</h2>
-    <p>Os pelúcias mais fofos do Brasil</p>
-  </section>
-
-  <!-- Produtos -->
-  <section class="produtos">
-    <h3>Destaques</h3>
-    <div class="grade">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200" alt="Ursinho 1">
-        <p>Ursinho Caramelo</p>
-        <span>R$ 49,90</span>
-      </div>
-      <div class="produto">
-        <img src="https://via.placeholder.com/200" alt="Ursinho 2">
-        <p>Almofada Estrela</p>
-        <span>R$ 39,90</span>
-      </div>
-      <div class="produto">
-        <img src="https://via.placeholder.com/200" alt="Ursinho 3">
-        <p>Chaveiro Panda</p>
-        <span>R$ 19,90</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="rodape">
-    <p>&copy; 2025 Mundo Pelúcia. Todos os direitos reservados.</p>
-  </footer>
+    <header>
+        <h1>Mundo Pelúcia</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="produto" onclick="adicionarAoCarrinho('Ursinho Caramelo')">
+                <img src="https://via.placeholder.com/200x200?text=Ursinho+Caramelo" alt="Ursinho Caramelo">
+                <h3>Ursinho Caramelo</h3>
+                <p>R$ 49,90</p>
+            </div>
+            <div class="produto" onclick="adicionarAoCarrinho('Almofada Panda')">
+                <img src="https://via.placeholder.com/200x200?text=Almofada+Panda" alt="Almofada Panda">
+                <h3>Almofada Panda</h3>
+                <p>R$ 34,90</p>
+            </div>
+            <div class="produto" onclick="adicionarAoCarrinho('Cachorrinho Azul')">
+                <img src="https://via.placeholder.com/200x200?text=Cachorrinho+Azul" alt="Cachorrinho Azul">
+                <h3>Cachorrinho Azul</h3>
+                <p>R$ 39,90</p>
+            </div>
+        </section>
+        <section class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul id="lista-carrinho"></ul>
+            <button onclick="irParaPagamento()">Finalizar Compra</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mundo Pelúcia</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
